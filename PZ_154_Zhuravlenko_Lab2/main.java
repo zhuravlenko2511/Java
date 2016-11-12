@@ -21,7 +21,6 @@ class main {
 		
 		JButton create_flower = new JButton("Create Flower");
 		create_flower.setFont(new Font("Verdana", Font.PLAIN, 15));
-		create_flower.setPreferredSize(new Dimension(100, 50));
 		
 		GridLayout flower_grid = new GridLayout(1, 1);
 		Flower.setLayout(flower_grid);
@@ -39,11 +38,9 @@ class main {
 		
 		JButton flower_random = new JButton("Create Random Flower");
 		flower_random.setFont(new Font("Verdana", Font.PLAIN, 15));
-		flower_random.setPreferredSize(new Dimension(100, 50));
 		
 		JButton flower_from_list = new JButton("Create Flower From List");
 		flower_from_list.setFont(new Font("Verdana", Font.PLAIN, 15));
-		flower_from_list.setPreferredSize(new Dimension(100, 50));
 		
 		GridLayout create_flower_grid = new GridLayout(1, 2);
 		Flower_Choice.setLayout(create_flower_grid);
@@ -57,16 +54,14 @@ class main {
 		//---створення форми для вибору квітки зі списку
 		
 		JFrame Flower_Choice_From_List = new JFrame("Flower Choice From List");
-		Flower_Choice.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		Flower_Choice.setVisible(false);
+		Flower_Choice_From_List.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Flower_Choice_From_List.setVisible(false);
 		
 		JComboBox<String> flower_list = new JComboBox<>(flower_properties_cls.get_array_name_of_flowers());
 		flower_list.setFont(new Font("Verdana", Font.PLAIN, 15));
-		flower_list.setPreferredSize(new Dimension(100, 50));
 		
 		JButton ok = new JButton("Ok");
 		ok.setFont(new Font("Verdana", Font.PLAIN, 15));
-		ok.setPreferredSize(new Dimension(100, 50));
 		
 		GridLayout flower_list_grid = new GridLayout(2, 1);
 		Flower_Choice_From_List.setLayout(flower_list_grid);
@@ -153,7 +148,6 @@ class main {
 		current_flower_is_plant_flower.setFont(new Font("Verdana", Font.PLAIN, 15));
 		
 		JPanel current_flower_info_jpanel = new JPanel(new GridLayout(5, 3));
-		current_flower_info_jpanel.setPreferredSize(new Dimension(900, 800));
 		current_flower_info_jpanel.add(current_flower_name);
 		current_flower_info_jpanel.add(current_flower_number_of_blades);
 		current_flower_info_jpanel.add(current_flower_height_of_flowers);
